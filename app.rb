@@ -64,7 +64,7 @@ delete '/keys/:id' do
   if KeyPair.exists?(params[:id])
     v=KeyPair.find(params[:id])
     v.destroy
-    "Key deleted"
+    "Key deleted..."
   else
     "Key not found..."
   end
